@@ -1454,9 +1454,10 @@ h5{
 
 .table th {
   color:white!important;
-  background-color:#279A9C!important;
+  background-color: #279A9C!important;
 }
 
 .table strong {
   font-weight: 400;
 }
+
