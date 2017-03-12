@@ -1086,7 +1086,10 @@ footer a{
     height: 50px;
     width: 50px;
   }  
-
+  
+  #fh5co-home{
+    background-position-x: -260px;  
+  }
 }
 
 .text-content p {
@@ -1445,4 +1448,17 @@ h5{
 .title-timeline{
   text-align:center;
   font-size: 5rem;
+}
+
+.table{
+  color:black;
+}
+
+.table th{
+  color:white;
+  background-color:#279A9C;
+}
+
+.table strong{
+  font-weight: 400;
 }
