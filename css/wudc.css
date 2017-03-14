@@ -746,11 +746,11 @@ navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .
 }
 #fh5co-work:before, #fh5co-work:after {
   position: absolute;
-  transform: rotate(-1.7deg);
-  -ms-transform: rotate(-1.7deg);
-  -webkit-transform: rotate(-1.7deg);
-  -o-transform: rotate(-1.7deg);
-  -moz-transform: rotate(-1.7deg);
+  /*transform: rotate(-1.7deg);*/
+  /*-ms-transform: rotate(-1.7deg);*/
+  /*-webkit-transform: rotate(-1.7deg);*/
+  /*-o-transform: rotate(-1.7deg);*/
+  /*-moz-transform: rotate(-1.7deg);*/
   background-color: #fff;
   content: "";
   z-index: 3;
@@ -1461,3 +1461,6 @@ h5{
   font-weight: 400;
 }
 
+#registration-body{
+    background-color: #e9f0f5;
+}
