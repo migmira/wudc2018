@@ -260,8 +260,8 @@ Main components
     font-size: 2rem;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-    font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 25px;
+    font-size: 2.5rem;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -283,9 +283,9 @@ Main components
     position: absolute;
     width: 100%;
     left: 122%;
-    top: 6px;
+    top: -15px;
     font-size: 16px;
-    font-size: 1rem;
+    font-size: 3rem;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
@@ -437,4 +437,9 @@ Main components
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+}
+
+
+#cd-timeline span{
+  color: black;
 }
