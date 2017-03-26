@@ -111,6 +111,23 @@ Main components
   margin-left: -12px;
   margin-top: -12px;
 }
+
+.cd-timeline-img i{
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    font-size: 29px;  
+    color: #279A9C;
+}
+
+@media only screen and (max-width: 1170px) {
+  .cd-timeline-img i{
+    top: 8px;
+    left: 8px;
+    font-size: 25px;
+  }
+}
+
 .cd-timeline-img.cd-picture {
   background: white;
 }
@@ -264,6 +281,13 @@ Main components
     font-size: 2.5rem;
   }
 }
+
+@media only screen and (max-width: 1170px) {
+  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     margin-left: 0;
