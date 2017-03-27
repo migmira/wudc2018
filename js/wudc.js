@@ -7,8 +7,6 @@ $( document ).ready(function() {
 	});
 
 
-
-
 	var lastScrollTop = 0;
 
 	$(window).scroll(function(event){
@@ -17,13 +15,18 @@ $( document ).ready(function() {
 
 		if ( scrlTop > 500 && scrlTop <= 2000 ) {
 			header.addClass('navbar-fixed-top fh5co-animated slideInDown');
+			// $('.navbar-brand').css('display','block');
+
 		} else if ( scrlTop <= 500) {
 			if ( header.hasClass('navbar-fixed-top') ) {
 				header.addClass('navbar-fixed-top fh5co-animated slideOutUp');
 				setTimeout(function(){
 					header.removeClass('navbar-fixed-top fh5co-animated slideInDown slideOutUp');
 				}, 100 );
+				
+				// $('.navbar-brand').css('display','none');
 			}
+			
 		} 
 		
 	});

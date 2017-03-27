@@ -6,8 +6,33 @@
   font-style: normal;
 }
 
+
+
+@font-face {
+    font-family: GothamBOOK;
+    src: url('../fonts/gotham/GothamHTF-Bold.otf') format("opentype");
+     font-weight: 700;
+     font-style: normal;    
+}
+
+@font-face {
+    font-family: GothamBOOK;
+    src: url('../fonts/gotham/GothamHTF-Book.otf') format("opentype");
+     font-weight: 400;
+     font-style: normal;    
+}
+
+@font-face {
+    font-family: GothamBOOK;
+    src: url('../fonts/gotham/GothamHTF-Light.otf') format("opentype");
+     font-weight: 300;
+     font-style: normal;    
+}
+
+
 body {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "GothamBOOK", "Source Sans Pro", Arial, sans-serif;
+  /*font-family: "Source Sans Pro", Arial, sans-serif;*/
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
@@ -36,7 +61,8 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  /*font-family: "Source Sans Pro", Arial, sans-serif;*/
+  font-family: "GothamBOOK", "Source Sans Pro", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0;
 }
@@ -116,7 +142,7 @@ section{
   margin-bottom: 0;
 }
 #fh5co-header #myNavbar li a {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "GothamBOOK","Source Sans Pro", Arial, sans-serif;
   color: rgba(255, 255, 255, .9);
   position: relative;
   font-size: 19px;
@@ -409,11 +435,11 @@ section{
 
 #countdown li span {
   display: block;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
-  height: 82px;
-  line-height: 79px;
-  width: 75px;
+  height: 70px;
+  line-height: 70px;
+  width: 70px;
   border-radius: 10px;
   border-right: 1px solid #9e3e2e;
   border-bottom: 1px solid #9e3e2e;
@@ -445,7 +471,7 @@ section{
 
 #countdown li:before {
   background-color: #FFFFFF;
-  content: "";
+  /*content: "";*/
   height: 11px;
   left: 0;
   position: absolute;
@@ -455,7 +481,7 @@ section{
 
 #countdown li:after {
   background-color: #FFFFFF;
-  content: "";
+  /*content: "";*/
   height: 11px;
   right:0;
   position: absolute;
@@ -1073,6 +1099,11 @@ footer a{
     background: rgba(0,0,0,0.9);
 }
 
+.logo-home{
+  max-width: 400px;
+  margin: auto;
+}
+
  /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 768px) {
   
@@ -1094,6 +1125,12 @@ footer a{
   #fh5co-home{
     background-position-x: -260px;  
   }
+  
+  .logo-home{
+    max-width: 300px;
+    margin: auto;
+  }  
+  
 }
 
 .text-content p {
@@ -1147,7 +1184,7 @@ footer a{
 
 h5{
     color: #000;
-    font-family: "Source Sans Pro", Arial, sans-serif;
+    /*font-family: "Source Sans Pro", Arial, sans-serif;*/
     font-weight: 400;
     margin: 10px 0 20px 0;
     font-size: 33px;
@@ -1236,6 +1273,12 @@ h5{
   #fh5co-intro .fh5co-block {
     width: 100%;
   }
+
+	/*.navbar-brand {*/
+	/*  display: block!important;*/
+	/*}*/
+
+  
 }
 #fh5co-intro .fh5co-block > .overlay-darker {
   z-index: 8;
