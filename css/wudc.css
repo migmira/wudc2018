@@ -914,8 +914,8 @@ navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .
   border-color: #E4007C;
 }
 
-.ContactForm .form-control{
-  border: 2px solid white;
+.contactForm-section .form-control{
+  border: 2px solid #F69A20;
 }
 
 .btn:hover, .btn:active, .btn:focus {
@@ -952,16 +952,17 @@ navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .
     border-color: #2e6da4;
 }
 
-#section-pink .btn{
+.ContactForm .btn{
   background-color: #E4007C;
   color:white;
-  border: 2px solid white!important;
+  border: 2px solid #E4007C!important;
   margin: 5px;
 }
 
-#section-pink .btn:hover{
-  background-color: white;
-  color: #E4007C;
+.ContactForm .btn:hover{
+  background-color: #F69A20;
+  color: white;
+  border: 2px solid #F69A20!important;
 }
 
 #fh5co-contact {
@@ -1210,16 +1211,15 @@ h5{
   margin-left: 20px;
 }
 
-#section-pink{
-  background-color: #E4007C;
+#contactForm-section{
   padding: 20px;
   padding-bottom: 35px;
 
 }
 
-#section-pink h3, #section-pink h5, #section-pink span, #section-pink div, #section-pink p, #section-pink i, #section-pink input, #section-pink textarea{
-  color:white;
-}
+/*#contactForm-section h3, #contactForm-section h5, #contactForm-section span, #contactForm-section div, #contactForm-section p, #contactForm-section i, #contactForm-section input, #contactForm-section textarea{*/
+/*  color:white;*/
+/*}*/
 
 
 @media screen and (max-width: 768px){
@@ -1344,28 +1344,6 @@ h5{
   border: 2px solid #6CC04A !important;
 }
 
-@media (min-width: 768px){
-.navbar-right { margin-right: -40px;}
-}
-
-::-webkit-input-placeholder {
-   color: white!important;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: white!important;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: white!important;  
-}
-
-:-ms-input-placeholder {  
-   color: white!important;  
-}
-
-.img-circular{
-}
 
 .img-circular {
     margin:auto;
