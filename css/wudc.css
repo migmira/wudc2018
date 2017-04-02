@@ -1458,23 +1458,6 @@ h5{
     background-image: url(../images/WhoWeAre/core9.jpg);
 }
 
-/****** PHOTOS ORG COMITE  ********/
-#Adj-img10{
-    background-image: url(../images/WhoWeAre/comite1.JPG);
-}
-
-#Adj-img11{
-    background-image: url(../images/WhoWeAre/comite2.jpg);
-}
-
-#Adj-img12{
-    background-image: url(../images/WhoWeAre/comite3.jpg);
-}
-
-#Adj-img13{
-    background-image: url(../images/WhoWeAre/comite4.jpg);
-}
-
 
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
     background-color: #f5f5f5!important;
