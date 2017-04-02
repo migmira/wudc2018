@@ -132,35 +132,34 @@
 	</section>
       
     
-  <section id="wudc">
+  <section id="gallery">
     <div class="container">
       <div class="row"> 
         <div class="text-content">
           <h1>Gallery</h1>
           
 
-          <div id="item1" class="col-sm-6 col-md-4 galery-item">
+          <div id="item1" class="col-md-4 col-sm-4 col-xs-12 galery-item">
             <div class="thumbnail">
               <img src="images/Gallery/BID/img1.jpg" alt="">
               <div class="caption">
-                <h3>Bid Ratification</h3>
+                <h3><br>Bid Ratification<br></h3>
                 <!--<p>...</p>-->
               </div>
             </div>
           </div>       
-          <!-- ALBUM 2
-          <div id="item2" class="col-sm-6 col-md-4 galery-item">
+           <!--ALBUM 2-->
+          <div id="item2" class="col-md-4 col-sm-4 col-xs-12 galery-item">
             <div class="thumbnail">
               <img src="images/Gallery/MXQ/mxq1.jpeg" alt="">
               <div class="caption">
-                <h3>Interview with MXQ Noticias (February 14th, 2017)</h3>
-              
+                <h3>Interview with MXQ Noticias Feb, 2017</h3>
               </div>
             </div>
-          </div> -->
-            
+          </div> 
+          
 
-					<div id="Slider" class="col-md-offset-2 col-md-8">
+					<div id="Slider" class="col-md-offset-2 col-md-8 slider1">
 						<ul class="pgwSlideshow album1">
 					    <li><img id="img1" src="images/Gallery/BID/img1.jpg" alt="Photo: Manuel J. Adams "></li>
 					    <li><img id="img2" src="images/Gallery/BID/img2.jpg" alt="Photo: Manuel J. Adams "></li>
@@ -168,8 +167,8 @@
 					    <li><img id="img4" src="images/Gallery/BID/img4.jpg" alt="Photo: Manuel J. Adams "></li>
 						</ul>
 				 	</div>
-				 	<!-- ALBUM 2 
-				 	<div id="Slider" class="col-md-offset-2 col-md-8">
+				 	<!-- ALBUM 2 -->
+				 	<div id="Slider" class="col-md-offset-2 col-md-8 slider2">
 						<ul class="pgwSlideshow album2">
 					    <li><img id="img1" src="images/Gallery/MXQ/mxq1.jpeg" alt=""></li>
 					    <li><img id="img2" src="images/Gallery/MXQ/mxq2.jpeg" alt=""></li>
@@ -177,7 +176,7 @@
 					    <li><img id="img4" src="images/Gallery/MXQ/mxq4.jpeg" alt=" "></li>
 					    <li><img id="img4" src="images/Gallery/MXQ/mxq5.jpeg" alt=" "></li>
 						</ul>
-				 	</div> -->
+				 	</div> 
 					 	
         </div>
       </div>
@@ -207,36 +206,47 @@
 		<script src="slideshow/pgwslideshow.js"></script>
 		<script src="slideshow/pgwslideshow.min.js"></script>
 		
-		<script >
+		<script>
 		  
 		  $(document).ready(function() {
-		    var state1 = true;
+		    var state1 = false;
+		    var state2 = false;
+		    var gallery1;
+		    var gallery2;
 		    
 		    $('#item1').click(function(){
 		      console.log(state1);
-		      if (state1){
-  		      var pgwSlideshow = $('.album1').pgwSlideshow({
-              transitionEffect : 'fading',
-            	//maxHeight : 700,
-            });	
-            state1 = false;
-		      }else{
-            pgwSlideshow.destroy(true);
-		      }
+		      destroyAll();
+	        gallery1 = $('.album1').pgwSlideshow({
+            transitionEffect : 'fading',
+        	  //maxHeight : 700,
+          });	
+          
+		      state1 = true;
+
 		    });
 		    
-
-    	
-    	  /*pgwSlideshow.reload({});*/
-            
-    
+		    $('#item2').click(function(){
+		      destroyAll();
+		      console.log(state2);
+  		        gallery2 = $('.album2').pgwSlideshow({
+                transitionEffect : 'fading',
+            	  //maxHeight : 700,
+              });	
+		    });		    
+		    
+		    function destroyAll(){
+		      if (gallery1 != null ){
+		        gallery1.destroy(true);
+		      }
+		      if (gallery2 != null)
+		        gallery2.destroy(true);
+		    }
+		    
 		  });
 		  
 		  
 		</script>
-		
-		
-		
 		
 		
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

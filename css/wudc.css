@@ -1422,8 +1422,12 @@ h5{
 
 .galery-item{
   float:none!important;
+  display: inline-block;
 }
 
+.galery-item img{
+  max-height: 180px;
+}
 
 /****** PHOTOS ADJUDICATION CORE ********/
 #Adj-img1{
