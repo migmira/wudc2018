@@ -1340,8 +1340,8 @@ h5{
   background: transparent;
 }
 #fh5co-intro .fh5co-block:hover .btn:hover, #fh5co-intro .fh5co-block:focus .btn:hover {
-  background: #52d3aa !important;
-  border: 2px solid #52d3aa !important;
+  background: #6CC04A !important;
+  border: 2px solid #6CC04A !important;
 }
 
 @media (min-width: 768px){
