@@ -1473,10 +1473,19 @@ h5{
   font-weight: 400;
 }
 
-#registration-body{
+.timeline-section{
     background-color: #e9f0f5;
 }
 
 .logotec{
   padding: 40px 40px;
+}
+
+.panel-title>a {
+  /*font-weight: 760;*/
+  font-size: 2.3rem;
+}
+
+.cd-container{
+  width: 100%!important;
 }
