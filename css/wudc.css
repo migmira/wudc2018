@@ -1510,3 +1510,7 @@ h5{
 .date-index{
   color:white;
 }
+
+.payment-list li{
+  color: black;
+}
