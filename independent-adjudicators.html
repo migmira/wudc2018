@@ -7,16 +7,19 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="The World Universities Debating Championship (WUDC) is the largest English-speaking debate competition in the world. Live Mexico 2018">
     <meta name="author" content="WUDC Website Team">
+		<meta name="keywords" content="" />
     
-    <!-- DISABLE CACHE (SHOULD BE ELIMINATED IN RELEASE VERSION) --->
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-    <meta http-equiv="pragma" content="no-cache" />    
-    <!-- END CACHE -->
-    
-    
+    <!-- Meta tags for Facebook and twitter integration -->
+    <meta property="og:url"                content="http://wudc2018.mx/" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="WUDC México 2018" />
+    <meta property="og:description"        content="The World Universities Debating Championship (WUDC) is the largest English-speaking debate competition in the world." />
+    <meta property="og:image"              content="http://wudc2018.mx/images/logo1200x630.jpg" />      
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@wudc2018" />
+		<meta name="twitter:creator" content="@wudc2018" />
+
+ 
     <link rel="icon" href="favicon.ico">
     <title>WUDC - 2018</title>
     <!-- Bootstrap core CSS -->
@@ -26,27 +29,26 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/wudc.css" rel="stylesheet">
-
+    
+    <!-- Vertical Timeline -->
+		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/vertical-timeline.css"> <!-- Resource style -->
+		<script src="js/modernizr.js"></script> <!-- Modernizr apparently not necessary 
     <!-- GOOGLE ANALYTICS -->
     <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-91986109-1', 'auto');
       ga('send', 'pageview', location.pathname);
     </script>
     
-    <!-- UNCOMMENT IF PAGE IS NOT RELEASED -->
-    <script>
-      //window.location.href = "index.html"
-    </script>
-    <!------------------------------------>
-    
+
+
   </head>
 
-  <body>
+  <body >
   	<header role="banner" id="fh5co-header" class="navbar-fixed-top">
   			<div class="container">
   				<!-- <div class="row"> -->
@@ -64,12 +66,12 @@
       			    <div class="collapse navbar-collapse" id="myNavbar">
       			      <ul class="nav navbar-nav navbar-right">
               			<li class=""><a href="index.html"><span>Home</span></a></li>
-      				    <li class="dropdown active"> <!-- active CLASS MUST BE IN ACTIVE PAGE-->
+      				    <li class="dropdown"> <!-- active CLASS MUST BE IN ACTIVE PAGE-->
     			          <a class="dropdown-toggle"  data-toggle="dropdown" href="#"><span>About</span></a>
     			          <ul class="dropdown-menu">
     			            <li><a href="wudc.html" >WUDC</a></li> <!-- selected CLASS MUST BE IN ACTIVE PAGE-->
     			            <li><a href="hosts.html">Hosts</a></li>
-    			            <li><a href="mexicocity.html" class="selected">Mexico City</a></li>      					            
+    			            <li><a href="mexicocity.html">Mexico City</a></li>      					            
     			          </ul>
     			        </li>
     			        <li class="dropdown">
@@ -80,12 +82,13 @@
     			            <li><a href="tab-team.html">Tab Team</a></li>
     			          </ul>
     			        </li>						        
-    			        <li class="dropdown">
+    			        <li class="dropdown active">
     			          <a class="dropdown-toggle" data-toggle="dropdown"  href="#"><span>Tournament</span></a>
     			          <ul class="dropdown-menu">
-    			            <li><a href="registration.html">Registration</a></li>
+    			            <li><a href="registration.html" >Registration</a></li>
     			            <li><a href="payment.html">Payment Information</a></li>
     			            <li><a href="schedule.html">Schedule</a></li>
+    			            <li><a href="independent-adjudicators.html" class="selected">Independent Adjudicators</a></li>     
     			            <li><a href="masters-public.html">Masters & Public Speaking</a></li>
     			            <li><a href="code-conduct.html">Code of Conduct</a></li>
     			            <li><a href="venues.html">Venues</a></li>      
@@ -93,8 +96,7 @@
     			            <li><a href="accomodation.html">Accommodation</a></li>      					            
     			            <li><a href="volunteers.html">Volunteers</a></li>     
                       <li><a href="training-materials.html">Training Materials</a></li>      					            
-    			            <li><a href="faqs.html">FAQs</a></li>   
-    			            <li><a href="faqs.html">Independent Adjudicators</a></li> 
+    			            <li><a href="faqs.html">FAQs</a></li>    
     			          </ul>
     			        </li>
                    	<li class=""><a href="partners.html"><span>Partners</span></a></li>
@@ -116,61 +118,54 @@
   	</header>    
       
 
-	  <section id="fh5co-work" class="intro"  style=" background-image:url(images/hosts_op2.jpg)!important; background-position-y: -300px;">
+	  <section id="fh5co-work" class="intro" style="background-image: url(images/Banners/14.jpg);" >
       <div class="gradient"></div>
       <div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Mexico City</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Fall in love with Mexico</h3>
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">Independent Adjudicators</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext to-animate">
+								<h3> WUDC 2018</h3>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-      
-    
-  <section id="wudc">
-    <div class="container">
-      <div class="row"> 
-        <div class="text-content">
-          <h1>Mexico City</h1>
-          <p>
-            Few cities in the world are as fascinating and incredible as Mexico City, capital of Mexico. Located in the central part of the country, Mexico City has a unique history that is reflected in its cultural diversity up to this day. The city was built over the Aztec capital of Tenochtitlan in the early sixteenth century and then served as the centre of the Spanish empire’s colonies in the Americas. After Mexico achieved its independence from Spain in 1821, Mexico City became the capital of the incipient nation.           
-          </p>
-          <p>
-            The richness of the city’s culture can be appreciated in its World Heritage Sites such as its Historic Centre, Xochimilco, Luis Barragan’s House and Studio and the University City of the National Autonomous University of Mexico. Furthermore, Mexico City has the most museums of any city in the world, a testimony to the city’s status as a cultural hub. Among these are Chapultepec Castle, the only royal castle ever to have existed in the Americas and which now serves as the National Museum of History; the world-renown National Museum of Anthropology; and numerous archaeological sites such as the Templo Mayor [Main Temple], the ruins of one of the most important temples in the old Tenochtitlan. 
-          </p>
-          
-          <p>
-            Nevertheless, Mexico City’s culture is not something only witnessed in museums, but also in its day-to-day life. Mexican cuisine is considered an Intangible Cultural Heritage by the UNESCO, and in Mexico City, a cultural crossroads for all the country, one may find countless places in which to try its many dishes and beverages. One may also enjoy the lively colours and the hustle and bustle of distinguished marketplaces in neighbourhoods such as Coyoacan and San Angel. Walking along the streets you may also see and hear another one of Mexico’s Intangible Cultural Heritages: mariachis. The nightlife of the city is also vibrant, and there are plenty of bars and clubs in neighbourhoods like Roma, Condesa and Polanco to cater for entertainment at the end of the day.
-          </p>
-        
-          <p>
-            In the past and present, Mexico City has thus always distinguished itself for its embracing attitude towards cultural difference; through cultivating debate and hosting WUDC 2018, we hope to not only continue but increase this attitude into the future. 
-          </p>
-          
-        </div>
-      </div>
-    </div>   
-  </section>
-  
-  <section>
-    <div class="container">
-			<div class="row watch-video text-center to-animate">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="embed-responsive embed-responsive-16by9 videoYB">
-						<iframe width="auto" height="315" src="https://www.youtube.com/embed/vBcHB47fBBY?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>			
-          </div>
-        </div>
-			</div>
-    </div>
-  </section>
+		</section>
+		
+		
+		
+		
+		<section id="independent-adj">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Applying to be an Independent Adjudicator at WUDC México 2018</h1>
+						<p>
+							Worlds cannot happen without high quality judges, and we are immensely grateful to all those who apply for Independent Adjudicator positions at WUDC México 2018.
+						</p>
+			     	<li>Round 1: 12.01am CDT  Monday <strong>June 26th </strong> – 11.59pm CST Wednesday <strong> July 12th </strong> - *OPEN NOW* </li>
+			     	<li> Round 2: 12.01am CDT Monday <strong>August 7th</strong> – 11.59pm CST Wednesday <strong>August 23rd</strong></li>
+			     	<li> Round 3: 12.01am CDT Monday <strong>September 18th</strong> – 11.59pm CST Wednesday <strong>October 4th</strong></li>
+						<br>
+						<p> 
+							Applicants will be emailed with the results of their applications approximately two weeks after the end of each round. An application’s outcome can be in one of four broad categories: <br>
+							1. No attendance – owing to capacity constraints, the applicant will not be able to come to WUDC as an Independent Adjudicator, even if they pay all of their own costs. They will still be able to attend as an institutional adjudicator. <br>
+							2. No funding – the applicant will need to pay all registration fees and all their travel costs in full. <br>
+							3. Registration waiver – the applicant will not need to pay the full (or potentially any) registration fee, but will need to pay all their travel costs. <br> 
+							4. Travel subsidy + registration waiver – the applicant will not need to pay any registration fee, and will receive a (full or partial) subsidy towards their travel costs. Subsidies will be paid in person at WUDC, and receipts will need to be provided to the Finance team for all travel expenses requiring reimbursement.
+						</p>
+						<p> <a href="https://goo.gl/forms/Lnl0yNfaTIgRRB1D2"> The application consists of a Google Form </a>, and should take 30-45 minutes. The form comprises four short sections: personal information, judging experience, debating experience and a 10-15 minute multiple-choice test. Applicants should follow the instructions on the form, and reach out to adjcoremex18@gmail.com with any questions.</p>
+		       	<a target='__blank' href="https://goo.gl/forms/Lnl0yNfaTIgRRB1D2" type="button" class="btn btn-primary">Apply Now</a>
 
-    
+					</div>
+				</div>
+			</div>
+		</section>			
+		
+
+
 	<footer>
 		<div class="filtro">
 	    <div class="container">
@@ -190,6 +185,8 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 		<script src="https://use.fontawesome.com/e8363bd70c.js"></script>  
+		<script src="js/vertical-timeline.js"></script> <!-- Resource jQuery -->
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   
