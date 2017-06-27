@@ -1,10 +1,10 @@
-$( document ).ready(function() {
+// $( document ).ready(function() {
 	var path = window.location.pathname;
 	console.log(path);
 
     $(document).on('DOMNodeInserted', function(e) {
 
-        // console.log(e);
+         console.log(e);
    
 		switch( path ) {
 			case '/adjudication-core.html':
@@ -81,4 +81,4 @@ $( document ).ready(function() {
 
 	});
 	
-});
+// });
