@@ -227,6 +227,7 @@ section{
   font-size: 30px;
   font-weight: 700;
   padding-left: 0;
+  padding-right: 8px;
   color: #fff;
 }
 #fh5co-header.navbar-fixed-top {
