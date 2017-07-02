@@ -1519,3 +1519,13 @@ h5{
 #independent-adj li{
   color: black;
 }
+
+.sponsors img{
+    padding: 35px;
+    position: relative;
+    margin: auto;
+}
+
+.sponsors .thumbnail{
+    min-height: 175px;
+}
