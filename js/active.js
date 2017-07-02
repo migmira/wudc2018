@@ -4,14 +4,14 @@
 
     $(document).on('DOMNodeInserted', function(e) {
 
-        console.log(e);
+        // console.log(e);
    
 		switch( path ) {
-			case '/adjudication-core.html':
+			case '/adjudication-core.html' || 'adjudicacion.html' :
 				$("#whoweare").addClass('active');
 				break;
 				
-			case '/organizing-comittee.html':
+			case '/organizing-comittee.html' || 'comiteorganizador.html':
 				$("#whoweare").addClass('active');
 				break;
 
@@ -19,20 +19,20 @@
 				$("#whoweare").addClass('active');
 				break;
 			
-			case '/wudc.html':
+			case '/wudc.html' || '/campeonato.html':
 				$("#about").addClass('active');
 				console.log('entro');
 				break;
 				
-			case '/hosts.html':
+			case '/hosts.html' || 'anfitriones.html' :
 				$("#about").addClass('active');
 				break;
 				
-			case '/mexicocity.html':
+			case '/mexicocity.html' || '/cdmx.html':
 				$("#about").addClass('active');
 				break;
 				
-			case '/registration.html':
+			case '/registration.html' || 'registro.html':
 				$("#tournament").addClass('active');
 				break;
 				
@@ -80,7 +80,7 @@
 				$("#tournament").addClass('active');
 				break;
 
-			case '/press-releases.html':
+			case '/press-releases.html' || '/comunicados-prensa.html':
 				$("#partners").addClass('active');
 				break;
 				
@@ -88,11 +88,11 @@
 				$("#partners").addClass('active');
 				break;
 				
-			case '/gallery.html':
+			case '/gallery.html' || '/galeria.html':
 				$("#partners").addClass('active');
 				break;
 
-			case '/contact.html':
+			case '/contact.html' || '/contacto.html':
 				$("#contact").addClass('active');	
 				break;
 				

@@ -1,12 +1,5 @@
 $( document ).ready(function() {
 
-
-	$("#countdown").countdown({
-			date: "27 december 2017 12:00:00",
-			format: "on"
-	});
-
-
 	var lastScrollTop = 0;
 
 	$(window).scroll(function(event){
