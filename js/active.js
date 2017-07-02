@@ -21,7 +21,7 @@
                 $("#whoweare").addClass('active');
                 break;
 
-            case  '/organizing-comittee.html':
+            case '/organizing-comittee.html':
             case '/es/comiteorganizador.html':
                 $("#whoweare").addClass('active');
                 break;
@@ -31,7 +31,7 @@
                 break;
 
             case '/wudc.html':
-            case '/wudc2018/es/campeonato.html':
+            case '/es/campeonato.html':
                 $("#about").addClass('active');
                 break;
 
