@@ -257,7 +257,7 @@ section{
 #fh5co-header.navbar-fixed-top #myNavbar li.active a {
   background: transparent;
   background: none;
-  color: #E4007C;
+  color: #E4007C!important;
 }
 #fh5co-header.navbar-fixed-top #myNavbar li.active a span:before {
   visibility: visible;
