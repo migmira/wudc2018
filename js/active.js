@@ -4,8 +4,7 @@
 
     $(document).on('DOMNodeInserted', function(e) {
 
-        console.log(e);
-
+        // console.log(e);
 
         switch( path ) {
 
@@ -36,7 +35,7 @@
                 break;
 
             case '/hosts.html':
-            case 'es/anfitriones.html':
+            case '/es/anfitriones.html':
                 $("#about").addClass('active');
                 break;
 
