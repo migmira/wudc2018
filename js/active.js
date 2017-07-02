@@ -7,11 +7,16 @@
         // console.log(e);
    
 		switch( path ) {
-			case '/adjudication-core.html' || 'adjudicacion.html' :
+
+			case '/index.html' || '/es/index.html':
+				$("#home").addClass('active');
+				break;
+
+			case '/adjudication-core.html' || '/es/adjudicacion.html' :
 				$("#whoweare").addClass('active');
 				break;
 				
-			case '/organizing-comittee.html' || 'comiteorganizador.html':
+			case '/organizing-comittee.html' || '/es/comiteorganizador.html':
 				$("#whoweare").addClass('active');
 				break;
 
@@ -19,20 +24,20 @@
 				$("#whoweare").addClass('active');
 				break;
 			
-			case '/wudc.html' || '/campeonato.html':
+			case '/wudc.html' || '/es/campeonato.html':
 				$("#about").addClass('active');
 				console.log('entro');
 				break;
 				
-			case '/hosts.html' || 'anfitriones.html' :
+			case '/hosts.html' || 'es/anfitriones.html' :
 				$("#about").addClass('active');
 				break;
 				
-			case '/mexicocity.html' || '/cdmx.html':
+			case '/mexicocity.html' || '/es/cdmx.html':
 				$("#about").addClass('active');
 				break;
 				
-			case '/registration.html' || 'registro.html':
+			case '/registration.html' || '/es/registro.html':
 				$("#tournament").addClass('active');
 				break;
 				
@@ -80,7 +85,7 @@
 				$("#tournament").addClass('active');
 				break;
 
-			case '/press-releases.html' || '/comunicados-prensa.html':
+			case '/press-releases.html' || '/es/comunicados-prensa.html':
 				$("#partners").addClass('active');
 				break;
 				
@@ -88,11 +93,11 @@
 				$("#partners").addClass('active');
 				break;
 				
-			case '/gallery.html' || '/galeria.html':
+			case '/gallery.html' || '/es/galeria.html':
 				$("#partners").addClass('active');
 				break;
 
-			case '/contact.html' || '/contacto.html':
+			case '/contact.html' || '/es/contacto.html':
 				$("#contact").addClass('active');	
 				break;
 				
