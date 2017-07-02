@@ -32,16 +32,19 @@
             case '/wudc.html':
             case '/es/campeonato.html':
                 $("#about").addClass('active');
+                $("#about-wudc").addClass('selected');
                 break;
 
             case '/hosts.html':
             case '/es/anfitriones.html':
                 $("#about").addClass('active');
+                $("#about-hosts").addClass('selected');
                 break;
 
             case '/mexicocity.html':
             case '/es/cdmx.html' :
                 $("#about").addClass('active');
+                $("#about-mexico").addClass('selected');
                 break;
 
             case '/registration.html':
