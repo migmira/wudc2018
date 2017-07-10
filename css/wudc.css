@@ -1478,10 +1478,10 @@ h5{
   color:black;
 }
 
-.table th {
-  color:white!important;
-  background-color: #279A9C!important;
-}
+/*.table th {*/
+  /*color:white!important;*/
+  /*background-color: #279A9C!important;*/
+/*}*/
 
 .table strong {
   font-weight: 400;
@@ -1534,4 +1534,23 @@ h5{
     background-color: #fff;
     border: 3px solid rgba(0,0,0,.125);
     border-radius: .25rem;
+}
+
+.schedule-table .table th {
+    background-color: #E4007C;
+    color:white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.schedule-table .table td{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.schedule-table .table .monthTable{
+    font-size: 15px;
 }
