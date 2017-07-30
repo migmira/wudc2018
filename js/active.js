@@ -61,6 +61,7 @@
                 $("#tournament-payment").addClass('selected');
                 break;
 
+            case ( '/horario.html' ):
             case ( '/schedule.html' ) :
                 $("#tournament").addClass('active');
                 $("#tournament-schedule").addClass('selected');

@@ -1554,3 +1554,7 @@ h5{
 .schedule-table .table .monthTable{
     font-size: 15px;
 }
+
+#org-commite ul li{
+  color: black;
+}
