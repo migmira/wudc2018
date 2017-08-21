@@ -1558,3 +1558,7 @@ h5{
 #org-commite ul li{
   color: black;
 }
+
+.esp{
+  display: inline-block;
+}
