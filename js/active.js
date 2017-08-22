@@ -98,6 +98,7 @@
                 break;
 
             case ( '/volunteers.html' ) :
+            case ( '/es/voluntarios.html' ) :
                 $("#tournament").addClass('active');
                 $("#tournament-volunteers").addClass('selected');
                 break;
