@@ -113,6 +113,11 @@
                 $("#tournament-faqs").addClass('selected');
                 break;
 
+            case '/partners.html':
+            case '/es/colaboradores.html' :
+                $("#partners").addClass('active');
+                break;
+
             case '/press-releases.html':
             case '/es/comunicados-prensa.html' :
                 $("#press").addClass('active');
