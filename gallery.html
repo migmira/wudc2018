@@ -77,7 +77,7 @@
         <div class="text-content">
           <h1>Gallery</h1>
           
-
+           <!--ALBUM 1-->
           <div id="item1" class="col-md-4 col-sm-4 col-xs-12 galery-item">
             <div class="thumbnail">
               <img src="images/Gallery/BID/img1.jpg" alt="">
@@ -86,13 +86,24 @@
                 <!--<p>...</p>-->
               </div>
             </div>
-          </div>       
+          </div>  
+          
            <!--ALBUM 2-->
           <div id="item2" class="col-md-4 col-sm-4 col-xs-12 galery-item">
             <div class="thumbnail">
               <img src="images/Gallery/MXQ/mxq1.jpeg" alt="">
               <div class="caption">
                 <h3>Interview with MXQ Noticias Feb, 2017</h3>
+              </div>
+            </div>
+          </div> 
+          
+           <!--ALBUM 3-->
+          <div id="item3" class="col-md-4 col-sm-4 col-xs-12 galery-item">
+            <div class="thumbnail">
+              <img src="images/Gallery/BANORTE/img1C.JPG" alt="">
+              <div class="caption">
+                <h3>Foro Banorte 2017</h3>
               </div>
             </div>
           </div> 
@@ -106,6 +117,9 @@
 					    <li><img id="img4" src="images/Gallery/BID/img4.jpg" alt="Photo: Manuel J. Adams "></li>
 						</ul>
 				 	</div>
+				 	
+				 	
+				 	
 				 	<!-- ALBUM 2 -->
 				 	<div id="Slider" class="col-md-offset-2 col-md-8 slider2">
 						<ul class="pgwSlideshow album2">
@@ -114,6 +128,23 @@
 					    <li><img id="img3" src="images/Gallery/MXQ/mxq3.jpeg" alt=""></li>
 					    <li><img id="img4" src="images/Gallery/MXQ/mxq4.jpeg" alt=" "></li>
 					    <li><img id="img4" src="images/Gallery/MXQ/mxq5.jpeg" alt=" "></li>
+						</ul>
+				 	</div> 
+				 	
+				 		<!-- ALBUM 3 -->
+				 	<div id="Slider" class="col-md-offset-2 col-md-8 slider3">
+						<ul class="pgwSlideshow album3">
+					    <li><a href="images/Gallery/BANORTE/BAN1.JPG" target="_blank"><img src="images/Gallery/BANORTE/img1C.JPG"></a></li>
+					    <li><a href="images/Gallery/BANORTE/BAN2.JPG" target="_blank"><img src="images/Gallery/BANORTE/img2C.JPG"></a></li>
+					    <li><a href="images/Gallery/BANORTE/BAN3.JPG" target="_blank"><img src="images/Gallery/BANORTE/img3C.JPG"></a></li>
+					    <li><a href="images/Gallery/BANORTE/BAN4.JPG" target="_blank"><img src="images/Gallery/BANORTE/img4C.JPG"></a></li>
+					    <li><a href="images/Gallery/BANORTE/BAN5.JPG" target="_blank"><img src="images/Gallery/BANORTE/img5C.JPG"></a></li>
+					    <li><a href="images/Gallery/BANORTE/BAN6.JPG" target="_blank"><img src="images/Gallery/BANORTE/img6C.JPG"></a></li>
+					    <li><a href="images/Gallery/BANORTE/BAN7.JPG" target="_blank"><img src="images/Gallery/BANORTE/img7C.JPG"></a></li>
+					    <li><a href="images/Gallery/BANORTE/BAN8.JPG" target="_blank"><img src="images/Gallery/BANORTE/img8C.JPG"></a></li>
+              <li><a href="images/Gallery/BANORTE/BAN9.JPG" target="_blank"><img src="images/Gallery/BANORTE/img9C.JPG"></a></li>
+					    <li><a href="images/Gallery/BANORTE/BAN10.JPG" target="_blank"><img src="images/Gallery/BANORTE/img10C.JPG"></a></li>
+
 						</ul>
 				 	</div> 
 					 	
@@ -141,8 +172,10 @@
 		  $(document).ready(function() {
 		    var state1 = false;
 		    var state2 = false;
+		    var state3 = false;
 		    var gallery1;
 		    var gallery2;
+		    var gallery3;
 		    
 		    $('#item1').click(function(){
 		      console.log(state1);
@@ -165,6 +198,17 @@
               });	
 		    });		    
 		    
+		    $('#item3').click(function(){
+		      destroyAll();
+		      console.log(state3);
+  		        gallery2 = $('.album3').pgwSlideshow({
+                transitionEffect : 'fading',
+            	  //maxHeight : 700,
+              });	
+		    });		    
+		    
+		    
+		    
 		    function destroyAll(){
 		      if (gallery1 != null ){
 		        gallery1.destroy(true);
@@ -172,6 +216,9 @@
 		      if (gallery2 != null)
 		        gallery2.destroy(true);
 		    }
+		      if (gallery3 != null){
+		        gallery3.destroy(true);
+		      }
 		    
 		  });
 		  
