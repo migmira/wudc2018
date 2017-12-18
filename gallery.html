@@ -211,14 +211,34 @@
 		    
 		    function destroyAll(){
 		      if (gallery1 != null ){
-		        gallery1.destroy(true);
+		        try{
+		          gallery1.destroy(true);
+		          
+		        }
+            catch(err) {
+                console.log( err.message );
+            }
 		      }
-		      if (gallery2 != null)
-		        gallery2.destroy(true);
+		      if (gallery2 != null ){
+		        try{
+		          gallery2.destroy(true);
+		          
+		        }
+            catch(err) {
+                console.log( err.message );
+            }
+		      }
+		      if (gallery3 != null ){
+		        try{
+		          gallery3.destroy(true);
+		          
+		        }
+            catch(err) {
+                console.log( err.message );
+            }
+		      }		      
+
 		    }
-		      if (gallery3 != null){
-		        gallery3.destroy(true);
-		      }
 		    
 		  });
 		  
