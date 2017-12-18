@@ -112,6 +112,11 @@
                 $("#tournament").addClass('active');
                 $("#tournament-faqs").addClass('selected');
                 break;
+                
+            case '/streaming.html':
+                $("#tournament").addClass('active');
+                $("#tournament-streaming").addClass('selected');
+                break;
 
             case '/partners.html':
             case '/es/colaboradores.html' :
