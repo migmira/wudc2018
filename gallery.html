@@ -121,11 +121,21 @@
           
           
           <!--ALBUM 5 day 2 -->
-          <div id = "item4" class="col-md-4 col-sm-4 col-xs-12 galery-item">
+          <div id = "item5" class="col-md-4 col-sm-4 col-xs-12 galery-item">
             <div class ="thumbnail">
               <img src="images/Gallery/day2/img1.jpg">
               <div class= "caption">
                 <h3>December 28th 2017</h3>
+              </div>
+            </div>
+          </div>
+          
+     <!--ALBUM 6 day 3 -->
+          <div id = "item6" class="col-md-4 col-sm-4 col-xs-12 galery-item">
+            <div class ="thumbnail">
+              <img src="images/Gallery/day3/img1.jpg">
+              <div class= "caption">
+                <h3>December 30th 2017</h3>
               </div>
             </div>
           </div>
@@ -191,13 +201,30 @@
 				 	
 				 	
 				 	
-				 	
+				 		<!-- ALBUM 5 -->
 				 		<div id="Slider" class="col-md-offset-2 col-md-8 slider5">
 						<ul class="pgwSlideshow album5">
-					    <li><img id="img2" src="images/Gallery/day1/img2.JPG" alt="Photo: Santiago Gutiérrez "></li>
-					    <li><img id="img3" src="images/Gallery/day1/img3.JPG" alt="Photo: Santiago Gutiérrez"></li>
-					    <li><img id="img4" src="images/Gallery/day1/img4.JPG" alt="Photo: Santiago Gutiérrez "></li>
-					    <li><img id="img4" src="images/Gallery/day1/img5.JPG" alt="Photo: Santiago Gutiérrez "></li>
+					    <li><img id="img1" src="images/Gallery/day2/img1.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img2" src="images/Gallery/day2/img2.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img3" src="images/Gallery/day2/img3.jpg" alt="Photo: Jacky Hsinghsein"></li>
+					    <li><img id="img4" src="images/Gallery/day2/img4.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img4" src="images/Gallery/day2/img5.jpg" alt="Photo: Jacky Hsinghsein "></li>
+							<li><img id="img1" src="images/Gallery/day2/img6.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img2" src="images/Gallery/day2/img7.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img3" src="images/Gallery/day2/img8.jpg" alt="Photo: Jacky Hsinghsein"></li>
+					    <li><img id="img4" src="images/Gallery/day2/img9.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img4" src="images/Gallery/day2/img10.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img4" src="images/Gallery/day2/img11.jpg" alt="Photo: Jacky Hsinghsein "></li>
+						</ul>
+				 	</div>
+				 	
+				 	
+				 		<!-- ALBUM 6 -->
+				 		<div id="Slider" class="col-md-offset-2 col-md-8 slider6">
+						<ul class="pgwSlideshow album6">
+					    <li><img id="img1" src="images/Gallery/day3/img1.jpg" alt="Photo: Arantza Asali"></li>
+					    <li><img id="img2" src="images/Gallery/day3/img2.jpg" alt="Photo: Arantza Asali "></li>
+					    <li><img id="img3" src="images/Gallery/day3/img3.jpg" alt="Photo: Arantza Asali"></li>
 						</ul>
 				 	</div>
 					 	
@@ -228,6 +255,7 @@
 		    var state3 = false;
 		    var state4 = false;
 		    var state5 = false;
+		    var state6 = false;
 
 
 
@@ -236,6 +264,8 @@
 		    var gallery3;
 		    var gallery4;
 		    var gallery5;
+		    var gallery6;
+
 		   
 		    $('#item1').click(function(){
 		      console.log(state1);
@@ -287,6 +317,16 @@
         });
         
         
+        $('#item6').click(function(){
+		      console.log(state1);
+		      destroyAll();
+	        gallery6 = $('.album6').pgwSlideshow({
+            transitionEffect : 'fading',
+        	  //maxHeight : 700,
+          });	
+        });
+        
+        
         
         
         
@@ -332,6 +372,16 @@
 		      if (gallery5 != null ){
 		        try{
 		          gallery5.destroy(true);
+		          
+		        }
+		        catch(err) {
+                console.log( err.message );
+            }
+		      }
+		      
+					if (gallery6 != null ){
+		        try{
+		          gallery6.destroy(true);
 		          
 		        }
 		        catch(err) {
