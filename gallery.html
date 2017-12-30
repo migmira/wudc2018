@@ -103,12 +103,34 @@
             <div class="thumbnail">
               <img src="images/Gallery/BANORTE/img1C.JPG" alt="">
               <div class="caption">
-                <h3>Foro Banorte 2017</h3>
+                <h3><br>Foro Banorte 2017</br></h3>
               </div>
             </div>
           </div> 
           
-
+          
+          <!--ALBUM 4 day 1 27th -->
+          <div id = "item4" class="col-md-4 col-sm-4 col-xs-12 galery-item">
+            <div class ="thumbnail">
+              <img src="images/Gallery/day1/img1.JPG">
+              <div class= "caption">
+                <h3>December 27th 2017</h3>
+              </div>
+            </div>
+          </div>
+          
+          
+           <!--ALBUM 5 day 2 28th-->
+          <div id = "item4" class="col-md-4 col-sm-4 col-xs-12 galery-item">
+            <div class ="thumbnail">
+              <img src="images/Gallery/day2/img1.jpg">
+              <div class= "caption">
+                <h3>December 28th 2017</h3>
+              </div>
+            </div>
+          </div>
+          
+				 	<!-- ALBUM 1 -->
 					<div id="Slider" class="col-md-offset-2 col-md-8 slider1">
 						<ul class="pgwSlideshow album1">
 					    <li><img id="img1" src="images/Gallery/BID/img1.jpg" alt="Photo: Manuel J. Adams "></li>
@@ -144,9 +166,39 @@
 					    <li><a href="images/Gallery/BANORTE/BAN8.JPG" target="_blank"><img src="images/Gallery/BANORTE/img8C.JPG"></a></li>
               <li><a href="images/Gallery/BANORTE/BAN9.JPG" target="_blank"><img src="images/Gallery/BANORTE/img9C.JPG"></a></li>
 					    <li><a href="images/Gallery/BANORTE/BAN10.JPG" target="_blank"><img src="images/Gallery/BANORTE/img10C.JPG"></a></li>
-
 						</ul>
 				 	</div> 
+				 	
+				 	
+				 		<!-- ALBUM 4 -->
+					<div id="Slider" class="col-md-offset-2 col-md-8 slider4">
+						<ul class="pgwSlideshow album4">
+					    <li><img id="img1" src="images/Gallery/day1/img1.JPG" alt="Photo: Santiago Gutiérrez "></li>
+					    <li><img id="img2" src="images/Gallery/day1/img2.JPG" alt="Photo: Santiago Gutiérrez "></li>
+					    <li><img id="img3" src="images/Gallery/day1/img3.JPG" alt="Photo: Santiago Gutiérrez"></li>
+					    <li><img id="img4" src="images/Gallery/day1/img4.JPG" alt="Photo: Santiago Gutiérrez "></li>
+					    <li><img id="img4" src="images/Gallery/day1/img5.JPG" alt="Photo: Santiago Gutiérrez "></li>
+						</ul>
+				 	</div>
+				 	
+				 	
+				 	<!-- ALBUM 5 -->
+				 	<div id="Slider" class="col-md-offset-2 col-md-8 slider5">
+						<ul class="pgwSlideshow album5">
+					    <li><img id="img1" src="images/Gallery/day2/img1.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img2" src="images/Gallery/day2/img2.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img3" src="images/Gallery/day2/img3.jpg" alt="Photo: Jacky Hsinghsein"></li>
+					    <li><img id="img4" src="images/Gallery/day2/img4.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img4" src="images/Gallery/day2/img5.jpg" alt="Photo: Jacky Hsinghsein "></li>
+							<li><img id="img1" src="images/Gallery/day2/img6.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img2" src="images/Gallery/day2/img7.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img3" src="images/Gallery/day2/img8.jpg" alt="Photo: Jacky Hsinghsein"></li>
+					    <li><img id="img4" src="images/Gallery/day2/img9.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img4" src="images/Gallery/day2/img10.jpg" alt="Photo: Jacky Hsinghsein "></li>
+					    <li><img id="img4" src="images/Gallery/day2/img11.jpg" alt="Photo: Jacky Hsinghsein "></li>
+
+						</ul>
+				 	</div>
 					 	
         </div>
       </div>
@@ -173,9 +225,29 @@
 		    var state1 = false;
 		    var state2 = false;
 		    var state3 = false;
+		    var state4 = false;
+		    var state5 = false;
+		    var state6 = false;
+		    var state7 = false;
+		    var state8 = false;
+		    var state9 = false;
+		    var state10 = false;
+		    var state11 = false;
+		    var state12 = false;
+
+
 		    var gallery1;
 		    var gallery2;
 		    var gallery3;
+		    var gallery4;
+		    var gallery5;
+		    var gallery6;
+		    var gallery7;
+		    var gallery8;		   
+		    var gallery9;
+		    var gallery10;
+		    var gallery11;
+		    var gallery12;
 		    
 		    $('#item1').click(function(){
 		      console.log(state1);
@@ -208,7 +280,82 @@
 		    });		    
 		    
 		    
+		    $('#item4').click(function(){
+		      console.log(state1);
+		      destroyAll();
+	        gallery1 = $('.album4').pgwSlideshow({
+            transitionEffect : 'fading',
+        	  //maxHeight : 700,
+          });	
+        });
+        
+        $('#item5').click(function(){
+		      console.log(state1);
+		      destroyAll();
+	        gallery1 = $('.album5').pgwSlideshow({
+            transitionEffect : 'fading',
+        	  //maxHeight : 700,
+          });	
+        });
+        
+        $('#item6').click(function(){
+		      console.log(state1);
+		      destroyAll();
+	        gallery1 = $('.album6').pgwSlideshow({
+            transitionEffect : 'fading',
+        	  //maxHeight : 700,
+          });	
+        });
+        
+		    $('#item7').click(function(){
+		      console.log(state1);
+		      destroyAll();
+	        gallery1 = $('.album7').pgwSlideshow({
+            transitionEffect : 'fading',
+        	  //maxHeight : 700,
+          });	
+        });
 		    
+		    
+		    $('#item8').click(function(){
+		      console.log(state1);
+		      destroyAll();
+	        gallery1 = $('.album8').pgwSlideshow({
+            transitionEffect : 'fading',
+        	  //maxHeight : 700,
+          });	
+        });
+        
+        
+        $('#item9').click(function(){
+		      console.log(state1);
+		      destroyAll();
+	        gallery1 = $('.album9').pgwSlideshow({
+            transitionEffect : 'fading',
+        	  //maxHeight : 700,
+          });	
+        });
+        
+        
+        
+        $('#item10').click(function(){
+		      console.log(state1);
+		      destroyAll();
+	        gallery1 = $('.album10').pgwSlideshow({
+            transitionEffect : 'fading',
+        	  //maxHeight : 700,
+          });	
+        });
+		    
+		    
+		    $('#item11').click(function(){
+		      console.log(state1);
+		      destroyAll();
+	        gallery1 = $('.album12').pgwSlideshow({
+            transitionEffect : 'fading',
+        	  //maxHeight : 700,
+          });	
+        });
 		    function destroyAll(){
 		      if (gallery1 != null ){
 		        try{
@@ -236,7 +383,101 @@
             catch(err) {
                 console.log( err.message );
             }
-		      }		      
+		      }
+		      
+		      if (gallery4 != null ){
+		        try{
+		          gallery4.destroy(true);
+		          
+		        }
+		        catch(err) {
+                console.log( err.message );
+            }
+		      }
+		      
+		      if (gallery5 != null ){
+		        try{
+		          gallery5.destroy(true);
+		          
+		        }
+		        catch(err) {
+                console.log( err.message );
+            }
+		      }
+		      
+		  		      if (gallery6 != null ){
+		        try{
+		          gallery6.destroy(true);
+		          
+		        }
+		        catch(err) {
+                console.log( err.message );
+            }
+		      }
+		      
+		      
+		      if (gallery7 != null ){
+		        try{
+		          gallery7.destroy(true);
+		          
+		        }
+		        catch(err) {
+                console.log( err.message );
+            }
+		      }
+		      
+		      
+		      
+		      	if (gallery8 != null ){
+		        try{
+		          gallery8.destroy(true);
+		          
+		        }
+		        catch(err) {
+                console.log( err.message );
+            }
+		      }
+		      
+		      
+		      if (gallery9 != null ){
+		        try{
+		          gallery9.destroy(true);
+		          
+		        }
+		        catch(err) {
+                console.log( err.message );
+            }
+		      }
+		      
+		      if (gallery10 != null ){
+		        try{
+		          gallery10.destroy(true);
+		          
+		        }
+		        catch(err) {
+                console.log( err.message );
+            }
+		      }
+		      
+		      if (gallery11 != null ){
+		        try{
+		          gallery11.destroy(true);
+		          
+		        }
+		        catch(err) {
+                console.log( err.message );
+            }
+		      }
+		      
+		      if (gallery12 != null ){
+		        try{
+		          gallery12.destroy(true);
+		          
+		        }
+		        catch(err) {
+                console.log( err.message );
+            }
+		      }
 
 		    }
 		    
